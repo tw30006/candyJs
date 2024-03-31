@@ -1,11 +1,16 @@
 // 編號：CANDY-018
 // 程式語言：JavaScript
 // 題目：實作一個可以印出隨機整數的函數
-function randomNumber(max, min = 0) {
-  if (max < min) {
-    return Math.floor(Math.random() * min - max) + max;
-  } else if (max > min && min === 0) {
-    return Math.floor(Math.random() * max - min) + min;
+function randomNumber(x, y = 0) {
+  // if (x < y) {
+  //   return Math.floor(Math.random() * y) + x;
+  // } else if (x > y) {
+  //   return Math.floor(Math.random() * x) + y;
+  // }
+  if (x < y) {
+    console.log(Math.random() * y) + x;
+  } else if (y === 0) {
+    console.log(Math.random() * x) + y;
   }
 }
 
