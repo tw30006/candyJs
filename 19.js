@@ -4,7 +4,7 @@
 
 function isSquare(num) {
   // 實作寫在這裡
-  console.log(Math.sqrt(num));
+  return Number.isInteger(Math.sqrt(num));
 }
 
 console.log(isSquare(0)); // true
